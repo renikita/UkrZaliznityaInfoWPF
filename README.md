@@ -27,7 +27,7 @@
 
 The main features of the application:
 
- - Purchase of train tickets: The application allows you to conveniently and quickly purchase train tickets from anywhere in Ukraine. The user can choose the required route, date and time of departure, type of carriage and seat on the train.
+ - Purchase of train tickets: The application allows you to conveniently and quickly purchase train tickets from anywhere in Ukraine. The user can choose the required route, date and time of departure, type of carriage and get a number of seat on the train.
 
  - Editing routes: Users can change their routes and add additional stops to them, to ensure the convenience of travel.
 
