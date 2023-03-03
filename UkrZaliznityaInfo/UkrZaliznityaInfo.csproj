@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Resourses\StringResources.en-GB.resx" />
+    <EmbeddedResource Remove="Resourses\StringResources.uk-Ukraine.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="e0ee67a0-1af5-4cdd-9929-13eb346a536f.jpg" />
+    <None Remove="Image\e0ee67a0-1af5-4cdd-9929-13eb346a536f.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="e0ee67a0-1af5-4cdd-9929-13eb346a536f.jpg" />
+    <Resource Include="Image\e0ee67a0-1af5-4cdd-9929-13eb346a536f.jpg" />
+    <Resource Include="Resourses\StringResources.en-GB.resx">
+      <LastGenOutput>StringResources.en-GB.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </Resource>
+    <Resource Include="Resourses\StringResources.uk-Ukraine.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.uk-Ukraine.Designer.cs</LastGenOutput>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resourses\StringResources.uk-Ukraine.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StringResources.uk-Ukraine.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

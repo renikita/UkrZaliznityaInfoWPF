@@ -1,0 +1,38 @@
+﻿<Window x:Class="UkrZaliznityaInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UkrZaliznityaInfo"
+        mc:Ignorable="d"
+        Title="UZInfo" Height="600" Width="1270" ResizeMode="NoResize" Icon="/e0ee67a0-1af5-4cdd-9929-13eb346a536f.jpg" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="C:/Users/Никита/source/repos/UkrZaliznityaInfo/UkrZaliznityaInfo/Image/MainMenu.png" Grid.ColumnSpan ="3" Grid.RowSpan="6" Stretch="Fill" StretchDirection="DownOnly"/>
+        <Image Source="C:/Users/Никита/source/repos/UkrZaliznityaInfo/UkrZaliznityaInfo/Image/slogan.png" Grid.Row="0" Grid.Column="0" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,0,0,0" Height="60"/>
+        <Image Source="C:/Users/Никита/source/repos/UkrZaliznityaInfo/UkrZaliznityaInfo/Image/mainmenu_icons/buy_icon.png" Grid.Row="0" Grid.Column="1" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="85,2,0,0" Height="56"/>
+        <Image Source="C:/Users/Никита/source/repos/UkrZaliznityaInfo/UkrZaliznityaInfo/Image/mainmenu_icons/timetable_icon.png" Grid.Row="0" Grid.Column="1" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="185,2,0,0" Height="56"/>
+        <Image Source="C:/Users/Никита/source/repos/UkrZaliznityaInfo/UkrZaliznityaInfo/Image/mainmenu_icons/settings_icon.png" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="285,2,0,0" Height="56"/>
+        <Image Source="C:/Users/Никита/source/repos/UkrZaliznityaInfo/UkrZaliznityaInfo/Image/mainmenu_icons/history_icon.png" Grid.Row="0" Grid.Column="1" Width="50"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="385,2,0,0" Height="56"/>
+        <ComboBox Grid.Column="2" Grid.Row="5" VerticalAlignment="Bottom" Background="Transparent" BorderBrush="#89000000" Width="310" HorizontalAlignment="Right" Margin="0,0,2,0" Height="25">
+            <ComboBoxItem IsSelected="True">Українська</ComboBoxItem>
+            <ComboBoxItem>English</ComboBoxItem>
+            <ComboBoxItem>Deutsch</ComboBoxItem>
+        </ComboBox>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="423*"></ColumnDefinition>
+            <ColumnDefinition Width="444*"></ColumnDefinition>
+            <ColumnDefinition Width="403*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97.34"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+    </Grid>
+</Window>
