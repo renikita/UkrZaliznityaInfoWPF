@@ -8,38 +8,120 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Resourses\StringResources.en-GB.resx" />
-    <EmbeddedResource Remove="Resourses\StringResources.uk-Ukraine.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Remove="7icon.png" />
+    <None Remove="Arrow.png" />
+    <None Remove="arrowdown.png" />
+    <None Remove="background_auth.png" />
+    <None Remove="background_reg.png" />
+    <None Remove="banner.png" />
+    <None Remove="bannerphoto1.png" />
+    <None Remove="bannerphoto2.png" />
+    <None Remove="bannerphoto3.png" />
+    <None Remove="bannerphoto4.png" />
+    <None Remove="bannerphoto5.png" />
+    <None Remove="bannerphoto6.png" />
+    <None Remove="bg1.png" />
+    <None Remove="bg2.png" />
+    <None Remove="blackbanner.png" />
+    <None Remove="bluebtn.png" />
     <None Remove="e0ee67a0-1af5-4cdd-9929-13eb346a536f.jpg" />
+    <None Remove="FLine.png" />
+    <None Remove="FrameEmail.png" />
+    <None Remove="FrameM.png" />
+    <None Remove="HLine1.png" />
+    <None Remove="HLine2.png" />
+    <None Remove="icon.ico" />
+    <None Remove="ico_slogan.png" />
+    <None Remove="Image\Auth_Menu\bg1.png" />
+    <None Remove="Image\Auth_Menu\bg2.png" />
+    <None Remove="Image\Auth_Menu\bluebtn.png" />
+    <None Remove="Image\Auth_Menu\FLine.png" />
+    <None Remove="Image\Auth_Menu\FrameM.png" />
+    <None Remove="Image\Auth_Menu\HLine1.png" />
+    <None Remove="Image\Auth_Menu\Mail.png" />
+    <None Remove="Image\Auth_Menu\pass.png" />
+    <None Remove="Image\Auth_Menu\VisPass.png" />
+    <None Remove="Image\Auth_Menu\whitebtn.png" />
     <None Remove="Image\e0ee67a0-1af5-4cdd-9929-13eb346a536f.jpg" />
+    <None Remove="LanguageChange.png" />
+    <None Remove="LINEBUNNER.png" />
+    <None Remove="LINE_UPD.png" />
+    <None Remove="logo.png" />
+    <None Remove="Mail.png" />
+    <None Remove="pass.png" />
+    <None Remove="pen.png" />
+    <None Remove="phone.png" />
+    <None Remove="photo_5352942639110014309_y 3.png" />
+    <None Remove="placeholder.png" />
+    <None Remove="placeholderHD.png" />
+    <None Remove="plus.png" />
+    <None Remove="Rout.png" />
+    <None Remove="slogan.png" />
+    <None Remove="StrangeLineCom.png" />
+    <None Remove="underline.png" />
+    <None Remove="VisPass.png" />
+    <None Remove="whitebox %281%29.png" />
+    <None Remove="whitebtn.png" />
+    <None Remove="whiteground.png" />
+    <None Remove="Window.png" />
+    <None Remove="Window_auth.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaterialDesignThemes" Version="4.7.1" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="e0ee67a0-1af5-4cdd-9929-13eb346a536f.jpg" />
-    <Resource Include="Image\e0ee67a0-1af5-4cdd-9929-13eb346a536f.jpg" />
-    <Resource Include="Resourses\StringResources.en-GB.resx">
-      <LastGenOutput>StringResources.en-GB.Designer.cs</LastGenOutput>
-      <Generator>ResXFileCodeGenerator</Generator>
-    </Resource>
-    <Resource Include="Resourses\StringResources.uk-Ukraine.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>StringResources.uk-Ukraine.Designer.cs</LastGenOutput>
-    </Resource>
+    <Resource Include="7icon.png" />
+    <Resource Include="Arrow.png" />
+    <Resource Include="arrowdown.png" />
+    <Resource Include="background_reg.png" />
+    <Resource Include="banner.png" />
+    <Resource Include="bannerphoto1.png" />
+    <Resource Include="bannerphoto2.png" />
+    <Resource Include="bannerphoto3.png" />
+    <Resource Include="bannerphoto4.png" />
+    <Resource Include="bannerphoto5.png" />
+    <Resource Include="bannerphoto6.png" />
+    <Resource Include="blackbanner.png" />
+    <Resource Include="ico_slogan.png" />
+    <Resource Include="Image\Auth_Menu\background_auth.png" />
+    <Resource Include="Image\Auth_Menu\bg1.png" />
+    <Resource Include="Image\Auth_Menu\bg2.png" />
+    <Resource Include="Image\Auth_Menu\bluebtn.png" />
+    <Resource Include="Image\Auth_Menu\FLine.png" />
+    <Resource Include="Image\Auth_Menu\FrameEmail.png" />
+    <Resource Include="Image\Auth_Menu\FrameM.png" />
+    <Resource Include="Image\Auth_Menu\HLine1.png" />
+    <Resource Include="Image\Auth_Menu\HLine2.png" />
+    <Resource Include="icon.ico" />
+    <Resource Include="Image\Auth_Menu\Mail.png" />
+    <Resource Include="Image\Auth_Menu\pass.png" />
+    <Resource Include="Image\Auth_Menu\VisPass.png" />
+    <Resource Include="Image\Auth_Menu\whitebtn.png" />
+    <Resource Include="LanguageChange.png" />
+    <Resource Include="LINEBUNNER.png" />
+    <Resource Include="LINE_UPD.png" />
+    <Resource Include="logo.png" />
+    <Resource Include="pen.png" />
+    <Resource Include="phone.png" />
+    <Resource Include="photo_5352942639110014309_y 3.png" />
+    <Resource Include="placeholder.png" />
+    <Resource Include="placeholderHD.png" />
+    <Resource Include="Image\Auth_Menu\slogan.png" />
+    <Resource Include="Image\Auth_Menu\Window.png" />
+    <Resource Include="Image\Auth_Menu\Window_auth.png" />
+    <Resource Include="plus.png" />
+    <Resource Include="Rout.png" />
+    <Resource Include="StrangeLineCom.png" />
+    <Resource Include="underline.png" />
+    <Resource Include="whitebox (1).png" />
+    <Resource Include="whiteground.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Resourses\StringResources.uk-Ukraine.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>StringResources.uk-Ukraine.resx</DependentUpon>
-    </Compile>
+    <Folder Include="Resourses\" />
   </ItemGroup>
 
 </Project>
