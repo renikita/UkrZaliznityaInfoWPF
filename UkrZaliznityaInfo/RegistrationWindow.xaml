@@ -1,0 +1,81 @@
+﻿<Window x:Class="UkrZaliznityaInfo.RegistrationWindow"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UkrZaliznityaInfo"
+        mc:Ignorable="d"
+        Title="Реєстрація - УкрЗалізниця" Height="600"  Width="1270" ResizeMode="NoResize" Icon="/icon.ico" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="image/Auth_Menu/background_auth.png"  Grid.ColumnSpan="5" Stretch="Fill" Grid.RowSpan="6"></Image>
+        <Image Source="/logo.png" Grid.Column="0" Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="208,-30,0,0" Width="80" />
+
+        <Image Source="image/Auth_Menu/bg1.png" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="6" Stretch="Fill" Margin="0,90,0,40" />
+        <Image Source="image/Auth_Menu/bg2.png" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="5" Stretch="Fill" Margin="0,120,0,0" Width="480"/>
+
+        <TextBlock x:Name="slogan" Text="text" Grid.Row="0" Foreground="White" FontSize="25" Grid.ColumnSpan="3" FontFamily="Montserrat" FontWeight="Bold" Margin="0,10,0,50" Grid.Column="1"/>
+        <TextBlock x:Name="Reg_Text" Text="Реєстрація" Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="26" FontFamily="Montserrat" Height="37" Width="186" Margin="129,0,0,0" Foreground="#FF262A83">
+            <TextBlock.Effect>
+                <DropShadowEffect ShadowDepth="0" Color="Black" BlurRadius="1.5"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <Image Source="image/Auth_Menu/FLine.png"  Grid.Column="1" Grid.Row="1" Height="20" Grid.ColumnSpan="3" Margin="62,33,61,0" ></Image>
+        <Image Source="image/Auth_Menu/FrameM.png" Grid.Column="2" Grid.Row="2" Height="35" VerticalAlignment="Top" Margin="1,15,0,0" Stretch="Fill"/>
+        <Image Source="image/Auth_Menu/FrameM.png" Grid.Column="2" Grid.Row="2" Height="35" VerticalAlignment="Top" Margin="1,55,0,0" Stretch="Fill"/>
+        <Image Source="image/Auth_Menu/FrameM.png" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Height="35" VerticalAlignment="Top" Margin="1,95,0,0" Stretch="Fill"/>
+        <Image Source="image/Auth_Menu/FrameM.png" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Height="33" VerticalAlignment="Top" Margin="1,135,0,0" Stretch="Fill"/>
+
+        <Image Source="/pen.png" Grid.Column="2" Grid.Row="2" Height="13" Width="17" HorizontalAlignment="Left" Margin="10,35,0,0"/>
+        <Image Source="/pen.png" Grid.Column="2" Grid.Row="2" Height="13" Width="17" HorizontalAlignment="Left" Margin="10,-46,0,0"/>
+        <Image Source="/phone.png" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Height="13" Width="17" HorizontalAlignment="Left" Margin="10,3,0,0"/>
+        <Image Source="image/Auth_Menu/Mail.png" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Height="13" Width="17" HorizontalAlignment="Left" Margin="10,85,0,0"/>
+
+        <TextBlock x:Name="NameText" Grid.Column="2" Grid.Row="2" Height="19" VerticalAlignment="Top" Margin="35,25,350,0" FontFamily="Montserrat" Text="Ім'я" TextAlignment="Left" Foreground="#FF8E8E8E"/>
+        <TextBlock x:Name="SurnameText" Grid.Column="2" Grid.Row="2" Height="19" VerticalAlignment="Top" Margin="35,65,330,0" FontFamily="Montserrat" Text="Прізвище" TextAlignment="Left" Foreground="#FF8E8E8E"/>
+        <TextBlock x:Name="PhoneText" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Height="19" VerticalAlignment="Top" Margin="35,104,290,0" FontFamily="Montserrat" Text="+38 (097) 999 99 99" TextAlignment="Left" Foreground="#FF8E8E8E"/>
+        <TextBlock x:Name="EmailText" Grid.Column="2" Grid.Row="3" Height="19" VerticalAlignment="Top" Margin="35,37,350,0" FontFamily="Montserrat" Text="Email" TextAlignment="Left" Foreground="#FF8E8E8E"/>
+
+
+        <TextBox x:Name="NameBox"  Grid.Column="2" Grid.Row="2" Height="25" VerticalAlignment="Top" SelectionBrush="#FFD7BB00" SelectionTextBrush="Black" BorderBrush="#89000000" Background="Transparent" SelectionOpacity="0" FontSize="13" Cursor="IBeam" AutomationProperties.HelpText="Введіть ім'я" AutomationProperties.Name="NameReg" MaxLength="40" Margin="35,20,23,0" FontFamily="Montserrat" BorderThickness="0,0,0,0" ClipToBounds="True" GotFocus="ClickBoxName" KeyUp="AmountSymbols" LostFocus="ExitClickBoxName"/>
+        <TextBox x:Name="SurnameBox"  Grid.Column="2" Grid.Row="2" Height="25" VerticalAlignment="Top" SelectionBrush="#FFD7BB00" SelectionTextBrush="Black" BorderBrush="#89000000" Background="Transparent" SelectionOpacity="0" FontSize="13" Cursor="IBeam" AutomationProperties.HelpText="Введіть прізвище" AutomationProperties.Name="SurnameReg" MaxLength="40" Margin="35,60,23,0" FontFamily="Montserrat" BorderThickness="0,0,0,0" ClipToBounds="True" GotFocus="ClickBoxSName" KeyUp="AmountSymbols" LostFocus="ExitClickBoxSName"/>
+        <TextBox x:Name="PhoneBox"  Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Height="25" VerticalAlignment="Top" SelectionBrush="#FFD7BB00" SelectionTextBrush="Black" BorderBrush="#89000000" Background="Transparent" SelectionOpacity="0" FontSize="13" Cursor="IBeam" AutomationProperties.HelpText="Введіть прізвище" AutomationProperties.Name="SurnameReg" MaxLength="40"  Margin="35,100,23,0" FontFamily="Montserrat" BorderThickness="0,0,0,0" ClipToBounds="True" GotFocus="ClickBoxNumber" KeyUp="AmountSymbols" LostFocus="ExitClickBoxNumber"/>
+        <TextBox x:Name="MailBox"  Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Height="25" VerticalAlignment="Top" SelectionBrush="#FFD7BB00" SelectionTextBrush="Black" BorderBrush="#89000000" Background="Transparent" SelectionOpacity="0" FontSize="13" Cursor="IBeam" AutomationProperties.HelpText="Введіть прізвище" AutomationProperties.Name="SurnameReg" MaxLength="40" Margin="35,140,23,0" FontFamily="Montserrat" BorderThickness="0,0,0,0" ClipToBounds="True" GotFocus="ClickBoxEmail" KeyUp="AmountSymbols" LostFocus="ExitClickBoxEmail"/>
+        <Image Source="image/Auth_Menu/FrameM.png" Grid.Column="2" Grid.Row="3" Height="35" VerticalAlignment="Top" Margin="0,65,0,0" Stretch="Fill"/>
+
+        <Image Source="image/Auth_Menu/pass.png" Grid.Column="2" Grid.Row="3" Height="17" Width="17" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,73,0,0"/>
+        <TextBlock x:Name="PassText" Grid.Column="2" Grid.Row="3" Height="19" VerticalAlignment="Top" Margin="35,74,335,0" FontFamily="Montserrat" Text="Пароль" TextAlignment="Left" Foreground="#FF8E8E8E"/>
+        
+        <PasswordBox x:Name="PassBox"  Grid.Column="2" Grid.Row="3" Height="25" VerticalAlignment="Top" SelectionBrush="#FFD7BB00" SelectionTextBrush="Black" BorderBrush="#89000000" Background="Transparent" SelectionOpacity="0" FontSize="13" Cursor="IBeam" AutomationProperties.HelpText="Введіть пароль" AutomationProperties.Name="EmailAuth" MaxLength="40" Margin="35,70,23,0" FontFamily="Montserrat" BorderThickness="0,0,0,0" ClipToBounds="True" GotFocus="ClickBoxPass" KeyUp="AmountSymbols" LostFocus="ExitClickBoxPassword" />
+        <TextBox x:Name="PassVisibleBox"  Grid.Column="2" Grid.Row="3" Height="25" VerticalAlignment="Top" SelectionBrush="#FFD7BB00" SelectionTextBrush="Black" BorderBrush="#89000000" Background="Transparent" SelectionOpacity="0" FontSize="13" Cursor="IBeam" AutomationProperties.HelpText="Введіть пароль" AutomationProperties.Name="EmailAuth" MaxLength="40" KeyUp="AmountSymbols" Margin="35,70,23,0" FontFamily="Montserrat" BorderThickness="0,0,0,0" ClipToBounds="True" GotFocus="ClickBoxPass" LostFocus="ExitClickBoxPass" IsEnabled="False" Visibility="Hidden"/>
+
+        <Image Source="image/Auth_Menu/VisPass.png" Grid.Column="2"   Grid.Row="3" Height="20" Width="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,72,10,0"></Image>
+        <Button x:Name="VisibleButton" Grid.Row="3"  Width="20" Cursor="Hand" Style="{StaticResource MaterialDesignFlatAccentButton}"   VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,72,10,0"  Grid.Column="2" Height="20" FontFamily="Montserrat" UseLayoutRounding="False" IsDefault="True" Foreground="#FF020101" Click="VisibleButton_Click" />
+        
+        <Image Source="image/Auth_Menu/bluebtn.png"  Grid.Column="2" Grid.Row="3" Grid.RowSpan="2"  Height="35" VerticalAlignment="Top" Margin="1,107,0,0" />
+        <Button x:Name="SignIn" Grid.Row="3" Grid.RowSpan="2" Width="254" Cursor="Hand" Style="{StaticResource MaterialDesignFlatButton}" Content="Увійти"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,107,0,0" AutomationProperties.HelpText="Зареєструватись" Grid.Column="2" Height="35" FontFamily="Montserrat" UseLayoutRounding="False" IsDefault="True" Foreground="White" Click="SignIn_Click" ></Button>
+        <Image Source="image/Auth_Menu/HLine1.png" Grid.Column="2" Grid.Row="4" Height="10" Width="180" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="1,0,0,53"  ></Image>
+        <TextBlock x:Name="OR_Text"  Grid.Column="1" Grid.Row="4" Height="19" VerticalAlignment="Top" FontFamily="Montserrat" Text="АБО" TextAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="17" Grid.ColumnSpan="2" Margin="65,39,0,0"/>
+        <Image Source="image/Auth_Menu/HLine1.png" Grid.Column="2" Grid.Row="4" Height="10" Width="180" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="269,0,0,0"  ></Image>
+        <Image Source="image/Auth_Menu/whitebtn.png"  Grid.Column="2" Grid.Row="4" Height="35" VerticalAlignment="Top" Margin="1,65,0,0" Width="254" />
+        <Button x:Name="SignUp" Grid.Row="4" Grid.Column="2" Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Авторизація" Style="{StaticResource MaterialDesignFlatButton}" Background="{x:Null}" AutomationProperties.HelpText="Авторизація облікового запису"  Margin="0,65,0,0" Height="33" BorderBrush="{x:Null}" FontFamily="Montserrat" Width="254" Click="SignUp_Click"/>
+        <Image Grid.Row="5" Grid.Column="4" Source="/LanguageChange.png" Width="70" Height="20" Margin="230,38,0,0"/>
+        <Button x:Name="Ukraine" Grid.Row="5"  Width="30" Cursor="Hand" Style="{StaticResource MaterialDesignFlatAccentButton}"   VerticalAlignment="Top" HorizontalAlignment="Center" Margin="220,40,0,0"  Grid.Column="4" Height="15" FontFamily="Montserrat" UseLayoutRounding="False" IsDefault="True" Foreground="White" Click="Ukraine_Click" />
+        <Button x:Name="English" Grid.Row="5"  Width="30" Cursor="Hand" Style="{StaticResource MaterialDesignFlatAccentButton}"   VerticalAlignment="Top" HorizontalAlignment="Center" Margin="285,40,0,0"  Grid.Column="4" Height="15" FontFamily="Montserrat" UseLayoutRounding="False" IsDefault="True" Foreground="White" Click="English_Click" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="82*"></ColumnDefinition>
+            <ColumnDefinition Width="16*"></ColumnDefinition>
+            <ColumnDefinition Width="110*"/>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="87*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="282*"></RowDefinition>
+            <RowDefinition Height="81*"></RowDefinition>
+            <RowDefinition Height="229*"></RowDefinition>
+            <RowDefinition Height="229*"/>
+            <RowDefinition Height="225*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+    </Grid>
+</Window>
